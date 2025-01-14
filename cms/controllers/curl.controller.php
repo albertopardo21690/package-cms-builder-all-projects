@@ -11,7 +11,7 @@ class CurlController{
 		$curl = curl_init();
 
 		curl_setopt_array($curl, array(
-			CURLOPT_URL => 'http://api.pos.com/'.$url,
+			CURLOPT_URL => '[RUTA_API]'.$url,
 			CURLOPT_RETURNTRANSFER => true,
 			CURLOPT_ENCODING => '',
 			CURLOPT_MAXREDIRS => 10,
@@ -21,7 +21,7 @@ class CurlController{
 			CURLOPT_CUSTOMREQUEST => $method,
 			CURLOPT_POSTFIELDS => $fields,
 			CURLOPT_HTTPHEADER => array(
-				'Authorization: gdfhdfhsdfyeryr34646fhdfy4564t3456fhgdy'
+				'Authorization: [APIKEY]'
 			),
 		));
 
