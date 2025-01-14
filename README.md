@@ -20,49 +20,25 @@
 Sigue estos pasos para instalar y configurar el paquete:
 
 1. Clona este repositorio:
-   `ash
+   `
    git clone https://github.com/tu-usuario/package-cms-builder-all-projects.git
    cd package-cms-builder-all-projects
    `
 
-2. Instala las dependencias necesarias:
-   `ash
-   npm install
-   `
-
-3. Configura los parámetros iniciales:
-   Modifica el archivo config.json según las necesidades de tu proyecto.
-
-4. Ejecuta el paquete:
-   `ash
-   npm run start
-   `
-
----
-
-## Uso
-
-1. Selecciona el CMS deseado desde el panel de configuración.
-2. Personaliza los módulos disponibles.
-3. Despliega el proyecto utilizando los scripts integrados:
-   `ash
-   npm run deploy
-   `
-
----
-
-## Estructura del repositorio
-
-`
-package-cms-builder-all-projects/
-├── src/
-│   ├── components/      # Componentes reutilizables
-│   ├── scripts/         # Scripts de automatización
-│   └── templates/       # Plantillas para proyectos CMS
-├── config.json          # Configuración global
-├── README.md            # Documentación del proyecto
-└── package.json         # Dependencias del proyecto
-`
+2. Cambiar los siguientes archivos:
+   package-cms-builder-all-projects/
+   ├── api
+      ├── models
+         ├── connection.php function `infoDatabase()` (Solo hay que cambiar los datos de la función: "infoDatabase()" con los datos de la base de datos). También hay que añadir la apikey solo letras y números la función se llama `apikey()`.
+             "database" => "[NAME_DATABASE]",
+			    "user" => "[USERNAME_DATABASE]",
+			    "pass" => "[PASSWORD_DATABASE]"
+   ├── cms
+      ├── controllers
+         ├── install.controller.php (Solo hay que cambiar los datos de la función: "infoDatabase()" con los datos de la base de datos).
+             "database" => "[NAME_DATABASE]",
+			    "user" => "[USERNAME_DATABASE]",
+			    "pass" => "[PASSWORD_DATABASE]"
 
 ---
 
