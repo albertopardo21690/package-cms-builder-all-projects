@@ -12,9 +12,9 @@ class Connection{
 
 		$infoDB = array(
 
-			"database" => "",
-			"user" => "",
-			"pass" => ""
+			"database" => "[NAME_DATABASE]",
+			"user" => "[USERNAME_DATABASE]",
+			"pass" => "[PASSWORD_DATABASE]"
 
 		);
 
@@ -28,7 +28,7 @@ class Connection{
 
 	static public function apikey(){
 
-		return "gdfhdfhsdfyeryr34646fhdfy4564t3456fhgdy";
+		return "[ADD_APIKEY]";
 
 	}
 
