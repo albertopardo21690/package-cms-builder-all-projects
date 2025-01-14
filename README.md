@@ -48,20 +48,11 @@ Sigue estos pasos para instalar y configurar el paquete:
 
 1. Haz un fork del repositorio.
 2. Crea una nueva rama:
-   `ash
-   git checkout -b feature/nueva-funcionalidad
-   `
+   `git checkout -b feature/nueva-funcionalidad`
 3. Realiza los cambios y haz un commit:
-   `ash
-   git commit -m 
-Añadida
-nueva
-funcionalidad
-   `
+   `git commit -m` "Añadida nueva funcionalidad"`
 4. Sube tus cambios:
-   `ash
-   git push origin feature/nueva-funcionalidad
-   `
+   `git push origin feature/nueva-funcionalidad`
 5. Abre un pull request en GitHub.
 
 ---
