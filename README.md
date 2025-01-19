@@ -67,9 +67,9 @@ Este proyecto está licenciado bajo la [MIT License](LICENSE).
 
 Si tienes dudas, sugerencias o necesitas soporte, no dudes en contactarnos:
 
-- **Email:** support@cmsbuilder.com
-- **Sitio web:** [CMS Builder](https://www.cmsbuilder.com)
-- **GitHub Issues:** [Reportar un problema](https://github.com/tu-usuario/package-cms-builder-all-projects/issues)
+- **Email:** support@alpardimedia.com
+- **Sitio web:** [CMS Builder](https://www.cms.alpardimedia.com)
+- **GitHub Issues:** [Reportar un problema](https://github.com/albertopardo21690/package-cms-builder-all-projects/issues)
 
 ---
 
