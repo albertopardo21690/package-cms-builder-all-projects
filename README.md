@@ -15,21 +15,20 @@
 
 ---
 
-## Instalación
+Configuración
 
-1. Clona este repositorio en tu máquina local y accede al directorio del proyecto:
-   ```bash
-   git clone https://github.com/tu-usuario/package-cms-builder-all-projects.git
-   cd package-cms-builder-all-projects
+Archivos a modificar
 
-2. Cambiar los siguientes archivos:
-   package-cms-builder-all-projects/
-├── api/
-│   ├── models/
-│   │   └── connection.php
-├── cms/
-│   ├── controllers/
-│   │   └── install.controller.php
+A continuación, se detalla qué archivos necesitan ser modificados y los cambios que debes realizar:
+
+1. api/models/connection.php
+
+Edita la función infoDatabase() para añadir los datos de tu base de datos.
+
+Configura la clave API (solo letras y números) en la función apikey().
+
+
+Ejemplo de configuración:
 
 function infoDatabase() {
     return [
@@ -41,6 +40,21 @@ function infoDatabase() {
 
 function apikey() {
     return "tuClaveAPI123";
+}
+
+2. cms/controllers/install.controller.php
+
+Edita la función infoDatabase() para añadir los datos de tu base de datos.
+
+
+Ejemplo de configuración:
+
+function infoDatabase() {
+    return [
+        "database" => "[NAME_DATABASE]",
+        "user" => "[USERNAME_DATABASE]",
+        "pass" => "[PASSWORD_DATABASE]"
+    ];
 }
 
 ---
