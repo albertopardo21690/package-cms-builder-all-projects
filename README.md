@@ -24,12 +24,12 @@
 
 2. Cambiar los siguientes archivos:
    package-cms-builder-all-projects/
-├── api
-│   ├── models
-│   │   ├── connection.php
-├── cms
-│   ├── controllers
-│   │   ├── install.controller.php
+├── api/
+│   ├── models/
+│   │   └── connection.php
+├── cms/
+│   ├── controllers/
+│   │   └── install.controller.php
 
 function infoDatabase() {
     return [
