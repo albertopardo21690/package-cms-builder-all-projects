@@ -17,28 +17,31 @@
 
 ## Instalación
 
-Sigue estos pasos para instalar y configurar el paquete:
-
-1. Clona este repositorio:
-   `
+1. Clona este repositorio en tu máquina local y accede al directorio del proyecto:
+   ```bash
    git clone https://github.com/tu-usuario/package-cms-builder-all-projects.git
    cd package-cms-builder-all-projects
-   `
 
 2. Cambiar los siguientes archivos:
    package-cms-builder-all-projects/
-   ├── api
-      ├── models
-         ├── connection.php function `infoDatabase()` (Solo hay que cambiar los datos de la función: "infoDatabase()" con los datos de la base de datos). También hay que añadir la apikey solo letras y números la función se llama `apikey()`.
-             "database" => "[NAME_DATABASE]",
-			    "user" => "[USERNAME_DATABASE]",
-			    "pass" => "[PASSWORD_DATABASE]"
-   ├── cms
-      ├── controllers
-         ├── install.controller.php (Solo hay que cambiar los datos de la función: "infoDatabase()" con los datos de la base de datos).
-             "database" => "[NAME_DATABASE]",
-			    "user" => "[USERNAME_DATABASE]",
-			    "pass" => "[PASSWORD_DATABASE]"
+├── api
+│   ├── models
+│   │   ├── connection.php
+├── cms
+│   ├── controllers
+│   │   ├── install.controller.php
+
+function infoDatabase() {
+    return [
+        "database" => "[NAME_DATABASE]",
+        "user" => "[USERNAME_DATABASE]",
+        "pass" => "[PASSWORD_DATABASE]"
+    ];
+}
+
+function apikey() {
+    return "tuClaveAPI123";
+}
 
 ---
 
