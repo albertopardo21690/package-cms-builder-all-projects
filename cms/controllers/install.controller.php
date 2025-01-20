@@ -209,8 +209,8 @@ class InstallController{
 				$url = "pages?token=no&except=id_page";
 				$method = "POST";
 				$fields = array(
-					"title_page" => "POS",
-					"url_page" => "pos",
+					"title_page" => "CMB-AP",
+					"url_page" => "pcbap",
 					"icon_page" => "bi bi-house-door-fill",
 					"type_page" => "modules",
 					"order_page" => 1,
