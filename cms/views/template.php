@@ -37,11 +37,7 @@ if($adminTable->status == 404){
 }else{
 
 	$admin = $adminTable->results[0];
-	// echo '<pre>'; print_r($admin); echo '</pre>';
 }
-
-
-
 
 ?>
 

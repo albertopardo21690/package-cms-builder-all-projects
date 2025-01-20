@@ -12,9 +12,9 @@ class Connection{
 
 		$infoDB = array(
 
-			"database" => "[NAME_DATABASE]",
-			"user" => "[USERNAME_DATABASE]",
-			"pass" => "[PASSWORD_DATABASE]"
+			"database" => "pcbap",
+			"user" => "root",
+			"pass" => ""
 
 		);
 
@@ -28,7 +28,7 @@ class Connection{
 
 	static public function apikey(){
 
-		return "[ADD_APIKEY]";
+		return "9Bvxf02MSS2p3S65G4fjWH9LZxpMfH02j2Rv1W37ynfnjF51debSRZFmtn0AZb1u8Sgca0Bn6PxzM3pBRp6WJi5A54k9XbrFFpYqZhcm2BrfgK4p8Z3wHaNnuZNKqbt9RTDyVua4u46W1x2JRdnt9eehF0mEeWmuWDpvwY5n2hZtcghdLz0nxSeew56fRiGxqcunnfCcMaATxYYeJjCenH4dpbqG2e3cZzgHS2cREy56LMkKYCfQKyZS4e2Fvd2GhF8ZHU2YKfqJ1RBXFJv2H4K3TwWcCVQHqNGwqZbCuVXV";
 
 	}
 

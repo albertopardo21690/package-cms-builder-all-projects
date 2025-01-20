@@ -9,9 +9,9 @@ class InstallController{
 	static public function infoDatabase(){
 
 		$infoDB = array(
-			"database" => "[NAME_DATABASE]",
-			"user" => "[USERNAME_DATABASE]",
-			"pass" => "[PASSWORD_DATABASE]"
+			"database" => "pcbap",
+			"user" => "root",
+			"pass" => ""
 		);
 
 		return $infoDB;

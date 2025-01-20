@@ -11,7 +11,7 @@ class CurlController{
 		$curl = curl_init();
 
 		curl_setopt_array($curl, array(
-			CURLOPT_URL => '[RUTA_API]'.$url,
+			CURLOPT_URL => 'http://api.pcbap.com/'.$url,
 			CURLOPT_RETURNTRANSFER => true,
 			CURLOPT_ENCODING => '',
 			CURLOPT_MAXREDIRS => 10,
@@ -21,7 +21,7 @@ class CurlController{
 			CURLOPT_CUSTOMREQUEST => $method,
 			CURLOPT_POSTFIELDS => $fields,
 			CURLOPT_HTTPHEADER => array(
-				'Authorization: [APIKEY]'
+				'Authorization: 9Bvxf02MSS2p3S65G4fjWH9LZxpMfH02j2Rv1W37ynfnjF51debSRZFmtn0AZb1u8Sgca0Bn6PxzM3pBRp6WJi5A54k9XbrFFpYqZhcm2BrfgK4p8Z3wHaNnuZNKqbt9RTDyVua4u46W1x2JRdnt9eehF0mEeWmuWDpvwY5n2hZtcghdLz0nxSeew56fRiGxqcunnfCcMaATxYYeJjCenH4dpbqG2e3cZzgHS2cREy56LMkKYCfQKyZS4e2Fvd2GhF8ZHU2YKfqJ1RBXFJv2H4K3TwWcCVQHqNGwqZbCuVXV'
 			),
 		));
 
